@@ -1,0 +1,45 @@
+<header class="topMenu container">
+  <div  class="row header">
+<!--     <div class="logo_img col-sm-2" >
+      <img src="../../assets/images/dog.png" alt="">
+    </div> -->
+    <div class="col-sm-12">
+      <ul class="row">
+        <li class="col-sm-3" *ngFor="let tab of topMenuTabData.results; let i = index">
+          <button type="button" class="btn btn-dark" (click)="Tab_topMenu(i)">
+            {{tab.rows}}
+          </button>
+        </li>
+        <!-- <li class="col-sm-2">
+          <button type="button" class="btn badge-warning" (click)="Tab_topMenu(0)">
+            Home <span class="badge">5</span>
+          </button>
+        </li>
+        <li class="col-sm-2">
+          <button type="button" class="btn badge-warning" (click)="Tab_topMenu(1)">
+             button<span class="badge ">11</span>
+          </button>
+        </li>
+        <li class="col-sm-2">
+          <button type="button" class="btn badge-warning" (click)="Tab_topMenu(2)">
+            warning <span class="badge ">14</span>
+          </button>
+        </li>
+        <li class="col-sm-2">
+          <button type="button" class="btn badge-warning" (click)="Tab_topMenu(3)">
+             button<span class="badge ">11</span>
+          </button>
+        </li>
+        <li class="col-sm-2">
+          <button type="button" class="btn badge-warning" (click)="Tab_topMenu(4)">
+            Home <span class="badge">5</span>
+          </button>
+        </li> -->
+      </ul>
+    </div>
+  </div>
+  <app-home *ngIf="tabIndex === 0"></app-home>
+  <app-splendid *ngIf="tabIndex === 1"></app-splendid>
+  <app-riley *ngIf="tabIndex === 2"></app-riley>
+</header>
+
